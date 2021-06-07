@@ -1,29 +1,28 @@
-//Функция, создающая массив в диапазоне между двумя числами.
-let rangeNew = (first, last) => {
-    let array = [];
-    let current = first;
-    if (first < last) { 
-        for (i = first; i <= last; i++) {
-            array.push(current);
-            current++; 
-        }
-    }
-    else {
-        for (i = last; i <= first; i++) {
-            array.push(current);
-            current++; 
-        }
+function range(start, end, step) {
+    if (step == null) step = 1;
+    var array = [];
+  
+    if (step > 0) {
+      for (var i = start; i <= end; i += step)
+        array.push(i);
+    } else {
+      for (var i = start; i >= end; i += step)
+        array.push(i);
     }
     return array;
-};
-
-//Функция, сворачивающая массив.
-let sum = function(array) {
-    let total = 0;
-    for (i = 0; i < array.length; i++) {
-        total += array[i];
-    }
+  }
+  
+  function sum(array) {
+    var total = 0;
+    for (var i = 0; i < array.length; i++)
+      total += array[i];
     return total;
-};
-
-console.log(sum(range(1, 10)));
+  }
+  
+  function factorial(n) {
+    if (n == 0) {
+      return 1;
+    } else {
+      return factorial(n - 1) * n;
+    }
+  }
