@@ -1,5 +1,5 @@
 //Функция, создающая массив в диапазоне между двумя числами.
-let rangeNew = (first, last) => {
+let range = (first, last) => {
     let array = [];
     let current = first;
     if (first < last) { 
