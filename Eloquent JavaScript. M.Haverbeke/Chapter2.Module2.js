@@ -16,7 +16,7 @@ while (i <= 100) {
   i++;
 }
 
-console.log("\t\t");
+console.log("\t");
 
 i = 1;
 let array2 = [];
@@ -37,7 +37,7 @@ while (i <= 100) {
   i++;
 }
 
-console.log("\t\t");
+console.log("\t");
 
 //с помощью switch
 let array3 = [];
@@ -65,7 +65,7 @@ while (i <= 100) {
   i++;
 }
 
-console.log("\t\t");
+console.log("\t");
 
 //kind of test
 let j = 0;
